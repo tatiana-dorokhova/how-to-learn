@@ -9,18 +9,107 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/*________________________________блок header_____________________________*/
+
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f2f2f2;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+/*логотип - верхний левый угол*/
+.logo {
+  width: 228px;
+  height: 32px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.logo__place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 6;  /*количество элементов у header, этот элемент будет выше всех*/
+}
+
+/*основной заголовок на странице*/
+.header__title {
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 700;
+  margin: 0 0 0 64px;
+  z-index: 6;
+}
+
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  z-index: 6;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: 0;
 }
+
+/*____________________________секция 2, блок description__________________*/
+
+.description {
+  display: flex;
+  border: 2px #000 solid;
+  width: 80%;
+  min-width: 784px;
+  margin: 100px auto;
+}
+
+.two_columns {
+
+}
+
+.two_columns__brief {
+  width: 175px;
+}
+
+.two_columns__main-text {
+
+}
+
+.two_columns__paragraph {
+
+}
+
+.two_columns__span-accent {
+
+}
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
