@@ -9,6 +9,10 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+.content {
+  /*display: block;*/
+}
+
 /*________________________________блок header_____________________________*/
 
 .header {
@@ -122,6 +126,63 @@
 }
 
 /*____________________________секция 3, блок digits___________________________*/
+
+.digits {
+  width: 60%;
+  margin: 100px auto;
+
+  border: 1px #000 solid;
+}
+
+.section-title {
+  display: flex;
+  ;
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0 auto;
+
+  border: 1px #000 solid;
+}
+
+.section-subtitle {
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  margin: 20px auto 60px;
+
+  border: 1px #000 solid;
+}
+
+.table {
+  display: flex;
+  width: 1100px;
+
+  border: 1px #000 solid;
+}
+
+.table__cell {
+  width: 250px;
+  padding: 0;
+  border: 1px #000 solid;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 700;
+
+  border: 1px #000 solid;
+}
+
+.table__text {
+  margin-top: 20px;
+  line-height: 1.2;
+  font-size: 18px;
+
+  border: 1px #000 solid;
+}
 
 
 
