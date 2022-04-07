@@ -9,12 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.content {
-  /*display: block;*/
-}
-
-
-
 /*________________________________блок header_____________________________*/
 
 .header {
@@ -182,6 +176,7 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
+  margin: 0;
 }
 
 .table__text {
@@ -255,7 +250,7 @@
   z-index: 1;
 }
 
-.table table_theme_dark{
+.table_theme_dark {
   margin-bottom: 90px;
 }
 
@@ -277,4 +272,68 @@
 
 /*________________________________блок footer___________________________*/
 
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  min-height: 350px;
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
 
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  position: relative;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+
+/* у flex умолчательное значение left bottom, поэтому в классах
+.footer__column_content_info и .footer__column_content_social его можно
+не переопределять */
+
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+}
+
+.footer__author {
+  color : white;
+  line-height: 25px;
+  font-size: 18px;
+  margin: 18px 0 18px 0;
+}
+
+.footer__column-heading {
+  color: #fff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer__column-links {
+  margin: 20px auto 16px auto;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__social_icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.footer__column-link {
+  color: #fff;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+}
