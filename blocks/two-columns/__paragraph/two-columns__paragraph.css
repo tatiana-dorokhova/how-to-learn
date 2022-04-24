@@ -1,11 +1,11 @@
 .two-columns__paragraph {
-    margin: 0;
-    margin-bottom: 30px;
-    line-height: 34px;
-    font-size: 24px;
-  }
+  margin: 0;
+  margin-bottom: 30px;
+  line-height: 34px;
+  font-size: 24px;
+}
 
-  /* последняя строка должна быть без отступа снизу */
+/* последняя строка должна быть без отступа снизу */
 .two-columns__paragraph:last-of-type {
   margin-bottom: 0;
 }
